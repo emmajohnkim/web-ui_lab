@@ -1,0 +1,155 @@
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+    position: relative;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  #primary_nav_wrap
+{
+  margin-top: 10px;
+}
+
+#primary_nav_wrap ul
+{
+  list-style:none;
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0
+}
+
+#primary_nav_wrap ul a
+{
+  display:block;
+  color:#333;
+  text-decoration:none;
+  font-weight:700;
+  font-size:15px;
+  line-height:30px;
+  padding:0 15px;
+  font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#primary_nav_wrap ul li
+{
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+  background:#8a8a8a
+}
+
+#primary_nav_wrap ul li:hover
+{
+  background:#53e490
+}
+
+#primary_nav_wrap ul ul
+{
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  background:#fff;
+  padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+  float:none;
+  width:200px
+}
+
+#primary_nav_wrap ul ul a
+{
+  line-height:120%;
+  padding:10px 15px
+}
+
+#primary_nav_wrap ul ul ul
+{
+  top:0;
+  left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+  display:block
+}
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0;
+  }
+  
+  .centered-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* Styles for the navigation when collapsed */
+  @media screen and (max-width: 620px) {
+    #primary_nav_wrap ul {
+      display: none;
+    }
+  
+    #primary_nav_wrap ul.show {
+      display: block;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+  
+  @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    header 
+    footer
+    main {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JQuery Validation Script</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="validation.js"></script>
+  <link href="ex3.css" rel="stylesheet" media="screen,print" />
+</head>
+<body>
+    <form action="" method="post">
+        Email:<input type="email" name="email" id="email" placeholder="Email" required><br>
+        <span class="error-icon"></span>
+        <div class="error-message"></div>
+    
+        Username: <input type="text" name="username" id="username" placeholder="Username" required><br>
+        <span class="error-icon"></span>
+        <div class="error-message"></div>
+    
+        Password: <input type="password" name="password" id="password" placeholder="Password" required><br>
+        <div id="password-strength-container"></div>
+    
+        Repeat Password: <input type="password" name="repeat_password" id="repeat_password" placeholder="Repeat Password" required><br>
+        <span class="error-icon"></span>
+        <div class="error-message"></div>
+    
+        Birth date: <input type="date" name="birth_date" id="birth_date" required><br>
+        <span class="error-icon"></span>
+        <div class="error-message"></div>
+    
+        Country: <select name="country" id="country" required>
+          <option value="">Country</option>
+          <option value="US">United States</option>
+          <option value="CA">Canada</option>
+          <option value="UK">United Kingdom</option>
+          <option value="AU">Australia</option>
+        </select><br>
+
+        Profile image: <input type="file" name="image" id="image" required><br>
+        <span class="error-icon"></span>
+        <div class="error-message"></div>
+    
+        User Presentation: <br><textarea name="user_presentation" id="user_presentation" placeholder="User Presentation (100 characters left)" required></textarea><br>
+        <span class="error-icon"></span>
+        <div class="error-message"></div>
+    
+        <input type="checkbox" name="terms" id="terms">
+        <label for="terms">I agree to the terms and conditions</label><br>
+    
+        <input type="submit" value="Submit" id="submit">
+        <input type="reset" value="Reset" id="reset">
+      </form>
+</body>
+</html>
